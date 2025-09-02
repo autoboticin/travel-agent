@@ -67,6 +67,84 @@
       font-size: 14px;
     }
   </style>
+  <script type="module" defer>
+  import Chatbot from "https://cdn.n8nchatui.com/v1/embed.js";
+  Chatbot.init({
+    "n8nChatUrl": "YOUR_N8N_CHAT_TRIGGER_NODE_WEBHOOK_URL",
+    "metadata": {}, // Include any custom data to send with each message to your n8n workflow
+    "theme": {
+      "button": {
+        "backgroundColor": "#110b5b",
+        "right": 20,
+        "bottom": 20,
+        "size": 50,
+        "iconColor": "#373434",
+        "customIconSrc": "https://autoboticin.github.io/travel-agent/autobotic_logo.png",
+        "customIconSize": 100,
+        "customIconBorderRadius": 9,
+        "autoWindowOpen": {
+          "autoOpen": false,
+          "openDelay": 2
+        },
+        "borderRadius": "rounded"
+      },
+      "tooltip": {
+        "showTooltip": true,
+        "tooltipMessage": "Hello, Welcome to Autobotic!!",
+        "tooltipBackgroundColor": "#ffffff",
+        "tooltipTextColor": "#1d0d4a",
+        "tooltipFontSize": 15
+      },
+      "chatWindow": {
+        "borderRadiusStyle": "rounded",
+        "avatarBorderRadius": 18,
+        "messageBorderRadius": 3,
+        "showTitle": true,
+        "title": "Autobotic",
+        "titleAvatarSrc": "https://autoboticin.github.io/travel-agent/autobotic_logo.png",
+        "avatarSize": 41,
+        "welcomeMessage": "Hello! This is the default welcome message",
+        "errorMessage": "Please connect me to n8n first",
+        "backgroundColor": "#ffffff",
+        "height": 600,
+        "width": 400,
+        "fontSize": 16,
+        "starterPrompts": [
+          "Who are you?",
+          "What do you do?"
+        ],
+        "starterPromptFontSize": 15,
+        "renderHTML": false,
+        "clearChatOnReload": false,
+        "showScrollbar": false,
+        "botMessage": {
+          "backgroundColor": "#398af3",
+          "textColor": "#fafafa",
+          "showAvatar": true,
+          "avatarSrc": "https://autoboticin.github.io/travel-agent/autobotic_logo.png",
+          "showCopyToClipboardIcon": false
+        },
+        "userMessage": {
+          "backgroundColor": "#fff6f3",
+          "textColor": "#050505",
+          "showAvatar": true,
+          "avatarSrc": "https://autoboticin.github.io/travel-agent/autobotic_logo.png"
+        },
+        "textInput": {
+          "placeholder": "Type your query",
+          "backgroundColor": "#ffffff",
+          "textColor": "#ffffff",
+          "sendButtonColor": "#f36539",
+          "maxChars": 50,
+          "maxCharsWarningMessage": "You exceeded the characters limit. Please input less than 50 characters.",
+          "autoFocus": false,
+          "borderRadius": 6,
+          "sendButtonBorderRadius": 50
+        }
+      }
+    }
+    });
+  </script>
 </head>
 <body>
   <header>
@@ -77,7 +155,7 @@
   <section class="intro">
     <h2>Smart AI-powered Travel Planning</h2>
     <p>
-      Welcome to <strong>Autobotic</strong> — your intelligent travel companion!  
+      Welcome to <strong>Autobotic</strong> â€” your intelligent travel companion!  
       We help you plan personalized travel experiences by analyzing your preferences, budget, and holidays.  
       From finding the perfect destinations to reminding you of upcoming long weekends, Autobotic makes travel planning effortless and exciting.
     </p>
@@ -95,3 +173,4 @@
   </footer>
 </body>
 </html>
+
